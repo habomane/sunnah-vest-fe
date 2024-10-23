@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import blocks from '../assets/jpg/blocks.jpg'
+import blocks from '@/assets/jpg/blocks.jpg'
 
 function Welcome()
 {

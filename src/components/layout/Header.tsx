@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import menu from '../assets/svg/menu.svg'
-import close from '../assets/svg/close.svg'
+import menu from '@/assets/svg/menu.svg'
+import close from '@/assets/svg/close.svg'
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
