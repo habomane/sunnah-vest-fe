@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
+import { TextPrimary, TextSecondary } from "../typography/Text";
 
-function Footer() {
+export const Footer: React.FC = () => {
     return (
-      <footer className=" bg-slate-50 py-2">
+      <footer className=" bg-slate-100 py-2">
         <div className="mx-5 px-5 py-3  text-md font-medium flex flex-col gap-y-2 md:flex-row md:justify-between">
-        <p className="font-accent text-2xl">Sunnah Vest</p>
-        <div className="flex flex-col text-sm text-slate-600">
-        <p className="">Copyright 2024 HOMane LLC. All Rights Reserved</p>
-        <div className="flex flex-wrap gap-x-3">
-        <Link to="/"><p className="cursor underline hover:font-bold">Privacy</p></Link>
-        <Link to="/"><p className="cursor underline hover:font-bold">Terms of Use</p></Link>
-        <Link to="/"><p className="cursor underline hover:font-bold">Security</p></Link>
+        <div className="flex flex-col items-left">
+          <TextPrimary> <span className="font-bold">Sunnah</span> <span className="font-bold text-[#dec535]">Vest</span>
+          </TextPrimary>
+        <TextSecondary>Copyright 2024</TextSecondary>
+        <TextSecondary>All Rights Reserved</TextSecondary>
         </div>
 
+        <div className="flex flex-col items-left">
+        <Link to="/"><TextSecondary><span className="hover:text-[#685e21b5]">Privacy</span></TextSecondary></Link>
+        <Link to="/"><TextSecondary><span className="hover:text-[#685e21b5]">Terms of Use</span></TextSecondary></Link>
+        <Link to="/"><TextSecondary><span className="hover:text-[#685e21b5]">Security</span></TextSecondary></Link>
         </div>
         </div>
 
@@ -21,5 +24,4 @@ function Footer() {
     );
   }
   
-  export default Footer;
   
