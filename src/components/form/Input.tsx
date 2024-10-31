@@ -1,4 +1,4 @@
-import { TextPrimary } from "../typography/Text";
+import { TextPrimary, TextSecondary } from "../typography/Text";
 
 type InputTextProps = {
   labelText: string;
@@ -95,7 +95,7 @@ export const InputRadio: React.FC<InputRadioProps> = ({
           }}
           className="border-2 border-slate-600 rounded-md px-4 py-2 focus:outline-[#efd439]"
         />
-        <TextPrimary>{labelText} <span className={isRequired ? "text-red-600 font-extrabold" : "hidden"}>*</span></TextPrimary>
+        <TextSecondary>{labelText} <span className={isRequired ? "text-red-600 font-extrabold" : "hidden"}>*</span></TextSecondary>
       </div>
     );
   };
